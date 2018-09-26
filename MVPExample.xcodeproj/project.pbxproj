@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		930A7099215403B100690B20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A7098215403B100690B20 /* AppDelegate.swift */; };
-		930A709B215403B100690B20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A709A215403B100690B20 /* ViewController.swift */; };
 		930A709E215403B100690B20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930A709C215403B100690B20 /* Main.storyboard */; };
 		930A70A0215403B300690B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930A709F215403B300690B20 /* Assets.xcassets */; };
 		930A70A3215403B300690B20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930A70A1215403B300690B20 /* LaunchScreen.storyboard */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		930A7095215403B100690B20 /* MVPExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		930A7098215403B100690B20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		930A709A215403B100690B20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		930A709D215403B100690B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		930A709F215403B300690B20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		930A70A2215403B300690B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,18 +60,49 @@
 		930A7097215403B100690B20 /* MVPExample */ = {
 			isa = PBXGroup;
 			children = (
+				930A710C215BF92F00690B20 /* DataSource */,
+				930A710B215BF90C00690B20 /* Models */,
+				930A7109215BF8FA00690B20 /* Views */,
+				930A710A215BF90300690B20 /* Presenters */,
 				930A7098215403B100690B20 /* AppDelegate.swift */,
-				930A709A215403B100690B20 /* ViewController.swift */,
-				930A70AA215404C200690B20 /* TrafficLight.swift */,
-				930A70AC215409EB00690B20 /* TrafficLightService.swift */,
-				930A70B0215411C600690B20 /* TrafficLightPresenter.swift */,
-				930A7102215AC46A00690B20 /* TrafficLightViewController.swift */,
 				930A709C215403B100690B20 /* Main.storyboard */,
 				930A709F215403B300690B20 /* Assets.xcassets */,
 				930A70A1215403B300690B20 /* LaunchScreen.storyboard */,
 				930A70A4215403B300690B20 /* Info.plist */,
 			);
 			path = MVPExample;
+			sourceTree = "<group>";
+		};
+		930A7109215BF8FA00690B20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				930A7102215AC46A00690B20 /* TrafficLightViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		930A710A215BF90300690B20 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				930A70B0215411C600690B20 /* TrafficLightPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		930A710B215BF90C00690B20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				930A70AA215404C200690B20 /* TrafficLight.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		930A710C215BF92F00690B20 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				930A70AC215409EB00690B20 /* TrafficLightService.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				930A70AD215409EB00690B20 /* TrafficLightService.swift in Sources */,
-				930A709B215403B100690B20 /* ViewController.swift in Sources */,
 				930A70B1215411C600690B20 /* TrafficLightPresenter.swift in Sources */,
 				930A7099215403B100690B20 /* AppDelegate.swift in Sources */,
 				930A7103215AC46A00690B20 /* TrafficLightViewController.swift in Sources */,
